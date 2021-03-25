@@ -2,11 +2,17 @@ import express from 'express'
 const router = express.Router()
 
 router.get('/', (req, resp)=>{
-    resp.render('inicio')
+    const suma = 1+1
+    resp.render('inicio',{
+        suma
+    })
 })
 
 router.get('/nosotros', (req, resp)=>{
-    resp.render('nosotros')
+    const viajes = 'Viaje a Alemania'
+    resp.render('nosotros',{
+        viajes: viajes
+    })
 })
 
 
