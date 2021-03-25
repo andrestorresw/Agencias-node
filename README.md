@@ -1,2 +1,3 @@
 # Agencias-node
-An Node.js proyect
+Created with NodeJS, Express, Pug, Nodemon
+A Node.js proyect
