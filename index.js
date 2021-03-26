@@ -9,6 +9,12 @@ const port = process.env.PORT || 4000
 //Enable pug
 app.set('view engine', 'pug')
 
+//Get actual year
+app.use((req, resp, next)=>{
+    console.log(req)
+    return next()
+})
+
 //Define public folder
 app.use(express.static('public'))
 
