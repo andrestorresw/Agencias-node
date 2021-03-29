@@ -9,10 +9,12 @@ const port = process.env.PORT || 4000
 //Enable pug
 app.set('view engine', 'pug')
 
-//Get actual year
+//Get current year
 app.use((req, resp, next)=>{
-    console.log(req)
-    return next()
+    const year = new Date()
+    resp.locals.year = year.getFullYear()
+    resp.locals.nombreSitio = 'Agencia de Viajes'
+    next()
 })
 
 //Define public folder

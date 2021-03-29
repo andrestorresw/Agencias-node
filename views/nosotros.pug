@@ -1,8 +1,32 @@
 extends ./layout/index
 
 block contenido
-    p #{viajes}
-    p= viajes
-    p 
-    
-    img(src="img/cupon.jpg")
+    main.container.mt-5
+        .row
+            .col-md-5
+                img(src="img/nosotros.jpg", alt="imagen sobre nosotros", class="img-fluid")
+            .col-md-7
+                h1 #{pagina}
+                blockquote Phasellus eget feugiat elit. Aliquam nisl diam, lobortis et mauris vel, maximus blandit tellus. Nunc eget dapibus orci, et porta odio. Cras tristique elementum urna, sit amet sollicitudin lacus eleifend et. Cras molestie magna eget elit suscipit, at accumsan erat tincidunt. Vivamus dignissim eu turpis ut mollis. Phasellus porttitor tellus lorem, ut feugiat risus volutpat in.
+
+                p Curabitur elementum, libero vitae volutpat fermentum, dui enim tincidunt risus, quis pellentesque tellus elit vitae nibh. In congue pulvinar gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum a lacus at nulla ultrices tempor sit amet quis felis.
+
+                p Phasellus tempus magna augue, vel aliquet risus suscipit sit amet. Duis sed tristique mi. Vestibulum tincidunt, enim at rhoncus commodo, felis sem scelerisque eros, euismod venenatis magna sapien sit amet ante. Mauris convallis diam nec tellus commodo faucibus.
+    .listado-iconos
+        .container.mt-5.py-5-text-center
+            .row
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", alt="icono seguridad", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad
+
+                    p Mauris convallis diam nec tellus commodo faucibus.
+                .col-md-4
+                    img(src="img/icono_destinos.svg", alt="icono destinos", class="img-fluid mb-4")
+                    h2.mb-4 Mejores Destinos
+
+                    p Mauris convallis diam nec tellus commodo faucibus.
+                .col-md-4
+                    img(src="img/icono_precios.svg", alt="icono precios", class="img-fluid mb-4")
+                    h2.mb-4 Mejores Precios
+
+                    p Mauris convallis diam nec tellus commodo faucibus.

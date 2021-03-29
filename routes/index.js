@@ -2,18 +2,27 @@ import express from 'express'
 const router = express.Router()
 
 router.get('/', (req, resp)=>{
-    const suma = 1+1
     resp.render('inicio',{
-        suma
+        pagina: 'Inicio'
     })
 })
 
 router.get('/nosotros', (req, resp)=>{
-    const viajes = 'Viaje a Alemania'
     resp.render('nosotros',{
-        viajes: viajes
+        pagina: 'Nosotros'
     })
 })
 
+router.get('/viajes', (req, resp)=>{
+    resp.render('viajes',{
+        pagina: 'Viajes'
+    })
+})
+
+router.get('/testimoniales', (req, resp)=>{
+    resp.render('testimoniales',{
+        pagina: 'Testimoniales'
+    })
+})
 
 export default router;
