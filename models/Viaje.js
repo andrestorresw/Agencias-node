@@ -17,7 +17,7 @@ export const Viaje = db.define('viajes',{
     imagen: {
         type: Sequelize.STRING
     },
-    description: {
+    descripcion: {
         type: Sequelize.STRING
     },
     disponibles: {
@@ -27,4 +27,4 @@ export const Viaje = db.define('viajes',{
         type: Sequelize.STRING
     },
 })
-const db = db()
+// const db = db()

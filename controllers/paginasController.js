@@ -1,3 +1,5 @@
+import {Viaje} from '../models/Viaje.js'
+
 const paginaInicio = (req, resp)=>{
     resp.render('inicio',{
         pagina: 'Inicio'
@@ -10,9 +12,15 @@ const paginaNosotros = (req, resp)=>{
     })
 }
 
-const paginaViajes = (req, resp)=>{
+const paginaViajes = async (req, resp)=>{
+    // Consulte BD
+    const viajes = await Viaje.findAll()
+
+    console.log(viajes)
+
     resp.render('viajes',{
-      pagina: 'Viajes'
+      pagina: 'Próximos Viajes',
+      viajes
     })
 }
 
