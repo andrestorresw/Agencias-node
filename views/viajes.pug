@@ -4,7 +4,7 @@ block contenido
     h1(class="mt-5 text-center") #{pagina}
     main.container.mt-5
         .row.proximos-viajes
-            each viaje in viajes
+            each viaje in viajes 
                 .col-md-6.col-lg-4.mb-4
                     .card
                         img.card-img-top(src=`img/destinos_${viaje.imagen}.jpg`, alt="imagen viaje")

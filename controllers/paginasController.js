@@ -16,8 +16,7 @@ const paginaViajes = async (req, resp)=>{
     // Consulte BD
     const viajes = await Viaje.findAll()
 
-    console.log(viajes)
-
+    
     resp.render('viajes',{
       pagina: 'Próximos Viajes',
       viajes
