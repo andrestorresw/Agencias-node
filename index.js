@@ -6,8 +6,8 @@ const app = express()
 
 //Conect database
 db.authenticate()
-    .then(()=> console.log('Base de datos conectada'))
-    .catch(error => console.log(error))
+    .then()
+    .catch()
 
 //Define port
 const port = process.env.PORT || 4000
